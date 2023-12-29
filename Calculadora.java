@@ -32,6 +32,9 @@ public class Calculadora {
             case "+":
                 suma();
                 break;
+            case "*":
+                multiplicacion();
+                break;
             default:
                 System.out.println("Operación no válida");
         }
@@ -41,6 +44,10 @@ public class Calculadora {
         resultado = numero1 + numero2;
     }
     
+    private void multiplicacion() {
+        resultado = numero1 * numero2;
+    }
+
     public double getResultado() {
         return resultado;
     }

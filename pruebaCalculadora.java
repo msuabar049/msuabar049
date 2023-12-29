@@ -11,8 +11,14 @@ public class pruebaCalculadora {
      */
      
     public static void main(String[] args) {
+        //Suma
         Calculadora calculadora = new Calculadora(2, 3, "+");
         calculadora.realizarOperacion();
-        System.out.println(calculadora.getResultado());
+        System.out.println("Suma: "+calculadora.getResultado());
+
+        //Multiplicación
+        Calculadora calculadora2 = new Calculadora(2, 3, "*");
+        calculadora2.realizarOperacion();
+        System.out.println("Multiplicación: "+calculadora2.getResultado());
     }
 }
