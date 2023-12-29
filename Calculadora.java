@@ -62,6 +62,10 @@ public class Calculadora {
         resultado = numero1 * numero2;
     }
 
+    private void division() {
+        resultado = numero1 / numero2;
+    }
+
     public double getResultado() {
         return resultado;
     }
