@@ -35,6 +35,9 @@ public class Calculadora {
             case "*":
                 multiplicacion();
                 break;
+            case "/":
+                division();
+                break;
             default:
                 System.out.println("Operación no válida");
         }
@@ -42,6 +45,10 @@ public class Calculadora {
 
     private void suma() {
         resultado = numero1 + numero2;
+    }
+
+    private void division() {
+        resultado = numero1 % numero2;
     }
     
     private void multiplicacion() {
