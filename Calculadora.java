@@ -27,6 +27,7 @@ public class Calculadora {
         this.operacion = operacion;
     }
 
+    //Realiza la operación
     public void realizarOperacion() {
         switch (operacion) {
             case "+":
