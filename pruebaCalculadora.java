@@ -20,5 +20,11 @@ public class pruebaCalculadora {
         Calculadora calculadora2 = new Calculadora(2, 3, "*");
         calculadora2.realizarOperacion();
         System.out.println("Multiplicación: "+calculadora2.getResultado());
+
+        //División  
+        Calculadora calculadora3 = new Calculadora(2, 3, "/");
+        calculadora3.realizarOperacion();
+        System.out.println("División: "+calculadora3.getResultado());
+        
     }
 }
