@@ -32,6 +32,9 @@ public class Calculadora {
             case "+":
                 suma();
                 break;
+            case "-":
+                resta();
+                break;
             case "*":
                 multiplicacion();
                 break;
@@ -45,6 +48,14 @@ public class Calculadora {
 
     private void suma() {
         resultado = numero1 + numero2;
+    }
+
+    private void resta() {
+        resultado = numero1 - numero2;
+    }
+  
+    private void division() {
+        resultado = numero1 % numero2;
     }
     
     private void multiplicacion() {

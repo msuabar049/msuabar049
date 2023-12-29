@@ -11,20 +11,24 @@ public class pruebaCalculadora {
      */
      
     public static void main(String[] args) {
-        //Suma
+        //suma
         Calculadora calculadora = new Calculadora(2, 3, "+");
         calculadora.realizarOperacion();
         System.out.println("Suma: "+calculadora.getResultado());
+        
+        //resta
+        Calculadora calculadora2 = new Calculadora(2, 3, "-");
+        calculadora2.realizarOperacion();
+        System.out.println("Suma: "+calculadora2.getResultado());
 
         //Multiplicación
-        Calculadora calculadora2 = new Calculadora(2, 3, "*");
-        calculadora2.realizarOperacion();
-        System.out.println("Multiplicación: "+calculadora2.getResultado());
-
-        //División  
-        Calculadora calculadora3 = new Calculadora(2, 3, "/");
+        Calculadora calculadora3 = new Calculadora(2, 3, "*");
         calculadora3.realizarOperacion();
-        System.out.println("División: "+calculadora3.getResultado());
-        
+        System.out.println("Multiplicación: "+calculadora3.getResultado());
+
+        //division
+        calculadora = new Calculadora(2, 3, "/");
+        calculadora.realizarOperacion();
+        System.out.println("Division: "+calculadora.getResultado());
     }
 }
