@@ -1,9 +1,26 @@
+/*
+ * This is a class that performs basic operations.
+ * @param numero1 The first number of the operation.
+ * @param numero2 The second number of the operation.
+ * @param operacion The operation to be performed.
+ * @return The result of the operation.
+ * @see Calculadora
+ * @msuabar049
+ */
 public class Calculadora {
     private int numero1;
     private int numero2;
     private double resultado;
     private String operacion;
     
+    /* 
+     * This is the constructor of the class.
+     * @param numero1 The first number of the operation.
+     * @param numero2 The second number of the operation.
+     * @param operacion The operation to be performed.
+     * @see Calculadora
+     * @msuabar049
+    */
     public Calculadora(int numero1, int numero2, String operacion) {
         this.numero1 = numero1;
         this.numero2 = numero2;
@@ -18,6 +35,12 @@ public class Calculadora {
             case "-":
                 resta();
                 break;
+            case "*":
+                multiplicacion();
+                break;
+            case "/":
+                division();
+                break;
             default:
                 System.out.println("Operación no válida");
         }
@@ -30,7 +53,15 @@ public class Calculadora {
     private void resta() {
         resultado = numero1 - numero2;
     }
+  
+    private void division() {
+        resultado = numero1 % numero2;
+    }
     
+    private void multiplicacion() {
+        resultado = numero1 * numero2;
+    }
+
     public double getResultado() {
         return resultado;
     }
