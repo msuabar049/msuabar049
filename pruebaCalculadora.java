@@ -16,6 +16,11 @@ public class pruebaCalculadora {
         calculadora.realizarOperacion();
         System.out.println("Suma: "+calculadora.getResultado());
 
+        //Multiplicación
+        Calculadora calculadora2 = new Calculadora(2, 3, "*");
+        calculadora2.realizarOperacion();
+        System.out.println("Multiplicación: "+calculadora2.getResultado());
+
         //division
         calculadora = new Calculadora(2, 3, "/");
         calculadora.realizarOperacion();
