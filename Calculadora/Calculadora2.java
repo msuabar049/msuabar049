@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculadora {
+public class Calculadora2 {
 
     public static void main(String[] args) {
         System.out.println("Seleccione una operacion: ");
@@ -27,5 +27,6 @@ public class Calculadora {
 
             opcion = sc.nextInt();
         }
+        sc.close();
     }
 }
