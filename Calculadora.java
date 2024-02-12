@@ -12,22 +12,27 @@ public class Calculadora {
     private int numero2;
     private double resultado;
     private String operacion;
-    
-    /* 
+
+    /*
      * This is the constructor of the class.
+     * 
      * @param numero1 The first number of the operation.
+     * 
      * @param numero2 The second number of the operation.
+     * 
      * @param operacion The operation to be performed.
+     * 
      * @see Calculadora
+     * 
      * @msuabar049
-    */
+     */
     public Calculadora(int numero1, int numero2, String operacion) {
         this.numero1 = numero1;
         this.numero2 = numero2;
         this.operacion = operacion;
     }
 
-    //Realiza la operación
+    // Realiza la operación
     public void realizarOperacion() {
         switch (operacion) {
             case "+":
@@ -54,7 +59,7 @@ public class Calculadora {
     private void resta() {
         resultado = numero1 - numero2;
     }
-  
+
     private void multiplicacion() {
         resultado = numero1 * numero2;
     }
@@ -65,5 +70,12 @@ public class Calculadora {
 
     public double getResultado() {
         return resultado;
+    }
+
+    public int modulo(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("El divisor no puede ser cero");
+        }
+        return a % b;
     }
 }
