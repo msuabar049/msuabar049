@@ -19,7 +19,7 @@ public class pruebaCalculadora {
         //resta
         Calculadora calculadora2 = new Calculadora(2, 3, "-");
         calculadora2.realizarOperacion();
-        System.out.println("Suma: "+calculadora2.getResultado());
+        System.out.println("Resta: "+calculadora2.getResultado());
 
         //Multiplicación
         Calculadora calculadora3 = new Calculadora(2, 3, "*");
@@ -30,5 +30,10 @@ public class pruebaCalculadora {
         calculadora = new Calculadora(2, 3, "/");
         calculadora.realizarOperacion();
         System.out.println("Division: "+calculadora.getResultado());
+        
+        //módulo
+        Calculadora calculadora4 = new Calculadora(5, 3, "%");
+        calculadora4.realizarOperacion();
+        System.out.println("Módulo: "+calculadora4.getResultado());
     }
 }
