@@ -42,6 +42,9 @@ public class Calculadora {
             case "/":
                 division();
                 break;
+                // hacer modulo
+                case "%":
+                modulo();
             default:
                 System.out.println("Operación no válida");
         }
@@ -61,6 +64,9 @@ public class Calculadora {
 
     private void division() {
         resultado = numero1 / numero2;
+    }
+    private void modulo() {
+        resultado = numero1 % numero2;
     }
 
     public double getResultado() {
