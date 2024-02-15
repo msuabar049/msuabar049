@@ -66,4 +66,9 @@ public class Calculadora {
     public double getResultado() {
         return resultado;
     }
+    // Metodo de operacion de modulo
+
+    public void modulo() {
+        resultado = numero1 % numero2;
+    }
 }
