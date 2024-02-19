@@ -43,7 +43,7 @@ public class Calculadora {
                 division();
                 break;
             case "%":
-                division();
+                modulo();
                 break;
             default:
                 System.out.println("Operación no válida");
