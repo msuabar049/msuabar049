@@ -63,6 +63,25 @@ public class Calculadora {
         resultado = numero1 / numero2;
     }
 
+    // En Calculadora.java
+// ...
+
+switch (operacion) {
+    // ...
+    case "%":
+        modulo();
+        break;
+    // ...
+}
+
+// ...
+
+private void modulo() {
+    resultado = numero1 % numero2;
+}
+
+// ...
+
     public double getResultado() {
         return resultado;
     }
